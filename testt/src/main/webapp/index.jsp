@@ -9,7 +9,13 @@
 
 </head>
 <body>
-
-${x1}
+	<form action="index.action">
+		<input name="txt"></input> 
+		<input type="submit" value="查询"></input>
+	</form>
+	<td>id</td>&nbsp&nbsp<td>name</td></br>
+	<c:forEach items="${list}" var="row">		
+ 		<td>${row.id}</td>&nbsp&nbsp<td>${row.name}</td></br> 		
+	</c:forEach>
 </body>
 </html>
