@@ -17,5 +17,16 @@ public class test_service_Impl implements test_service {
 	public List<test> selectbyname(String txt) {
 		return dao.selectbyname(txt);
 	}
-	
+	public void delete(int id) {
+		dao.delete(id);
+	};
+	public void insert(test t) {
+		dao.insert(t);
+	};
+	public test selectbyid(Integer id) {
+		return dao.selectbyid(id);
+	};
+	public void update(test t) {
+		dao.update(t);
+	};
 }
